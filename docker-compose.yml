@@ -1,5 +1,5 @@
 kibana:
-  container_name: DifaproKibana
+  container_name: KibanaSense
 #  image: kibana:4.5
   build: .
   ports:
