@@ -1,0 +1,11 @@
+kibana:
+  container_name: DifaproKibana
+#  image: kibana:4.5
+  build: .
+  ports:
+   - 5601:5601
+  net: "host"
+  restart: always
+  environment:
+   - ELASTICSEARCH_URL=http://192.168.99.100:32769
+
